@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<stdbool.h>
 int n;
 float f[100][100];
 float Det=0;
@@ -54,7 +55,7 @@ main()
 	}
 	Xuat();
 	int a[n],x[n];
-	bool used[n]={0};
+	bool used[n];
 	for(i=0;i<n;i++) a[i]=i+1;
 	Tinh_dinh_thuc(0,x,a,used);
 	printf("Dinh thuc cua ma tran = %0.4f",Det);
